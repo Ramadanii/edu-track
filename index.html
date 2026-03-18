@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EduTrack</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" type="image/png">
+    <link rel="stylesheet" href="eduTrack.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+
+        <aside class="sidebar">
+            <h2>EduTrack</h2>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li>Students</li>
+                <li>Grades</li>
+            </ul>
+        </aside>
+
+
+        <main>
+
+
+            <header class="header">
+                <h1>Dashboard</h1>
+                <button onclick="openModal()">+ Add Students</button>
+            </header>
+
+
+            <section class="stats">
+                <div class="card">
+                    <h3 id="totalStudents">0</h3>
+                    <p>Total number of students</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="avgGrade">0</h3>
+                    <p>The average</p>
+                </div>
+            </section>
+
+
+            <section class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Subject</th>
+                            <th>Grades</th>
+                            <th>Average</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Add Students</h2>
+            <input type="text" id="name" placeholder="Emri">
+            <input type="text" id="subject" placeholder="Lënda">
+            <button onclick="addStudent()">Save</button>
+            <button onclick="closeModal()">Closed</button>
+        </div>
+    </div>
+
+    <script src="eduTrack.js"></script>
+</body>
+
+</html>
