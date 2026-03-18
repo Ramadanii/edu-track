@@ -18,4 +18,4 @@ EduTrack JS is a classroom management web application built using HTML, CSS, and
 This project demonstrates advanced JavaScript skills and building a dynamic user interface without frameworks.
 
 ## Live Demo
-https://github.com/Ramadanii/edu-track
+https://Ramadanii.github.io/edu-track
